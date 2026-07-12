@@ -4,7 +4,7 @@ A simple and interactive Color Palette Picker built with **React**.
 
 Users can select a color from a palette, preview it, view its hexadecimal code, and reset the selection.
 
-# Live demo: https://color-palette-picker-lyart.vercel.app/
+## Live demo: https://color-palette-picker-lyart.vercel.app/
 
 ---
 
