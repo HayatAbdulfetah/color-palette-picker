@@ -9,7 +9,7 @@ Users can select a color from a palette, preview it, view its hexadecimal code, 
 
 ## 📸 Screenshot
 
-![App Screenshot](./assets/screenshot.png)
+![App Screenshot](./src/assets/screenshot.png)
 
 ## ✨ Features
 
