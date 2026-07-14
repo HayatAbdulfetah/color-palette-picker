@@ -2,15 +2,17 @@ function ColorPreview({ color }) {
   return (
     <div>
       <div
-        className="preview-box"
+        className={`preview-box ${!color ? "empty" : ""}`}
         style={{
-          backgroundColor: color?.value || "#e5e7eb",
+          backgroundColor: color?.value || "#f8f9fa",
         }}
       >
+      
         {!color && (
-          <p className="no-color">
-            No color selected yet
-          </p>
+          <div className="empty-preview">
+            <span className="palette-icon">🎨</span>
+            <p>Select a Color</p>
+          </div>
         )}
       </div>
 

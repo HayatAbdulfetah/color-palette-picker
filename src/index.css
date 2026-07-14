@@ -6,7 +6,7 @@
 
 body {
   background: #f5f5f5;
-  font-family:'Poppins',sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
   background: rgb(255, 255, 255);
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -24,17 +24,18 @@ h1 {
   margin-bottom: 15px;
 }
 
-.subtitle{
-    color:#666;
-    margin-bottom: 30px;
+.subtitle {
+  color: #666;
+  margin-bottom: 30px;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 30px;
+  margin-top: 50px;
 }
 
 .preview-section {
@@ -62,29 +63,29 @@ button {
 .selected {
   border: 3px solid black;
   transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(0,0,0,.25);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
 .reset-btn {
-    margin-top: 25px;
-    padding: 12px 35px;
-    border: none;
-    border-radius: 8px;
-    background: #333;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    transition: .3s;
+  margin-top: 25px;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 8px;
+  background: #333;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .reset-btn:hover {
-    background: #111;
-    transform: scale(1.05);
+  background: #111;
+  transform: scale(1.05);
 }
 
 .reset-btn:disabled {
-    background: gray;
-    cursor: not-allowed;
+  background: gray;
+  cursor: not-allowed;
 }
 
 .preview-box {
@@ -101,6 +102,9 @@ button {
   transition: all 0.3s ease;
 }
 
+.preview-box.empty {
+  border: 3px dashed #bdbdbd;
+}
 .preview-box p {
   font-size: 18px;
   color: #555;
@@ -116,39 +120,105 @@ button {
   transition: color 0.3s ease;
 }
 
-.no-color {
-  color: #555;
-  font-size: 20px;
-  font-weight: bold;
+.empty-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  gap: 8px;
+}
+
+.palette-icon {
+  font-size: 48px;
+  filter: grayscale(80%);
+}
+
+.empty-preview p {
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .button-container button:hover {
   transform: translateY(-3px);
   opacity: 0.9;
-  box-shadow: 0 5px 12px rgba(0,0,0,.25);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.25);
 }
 
 .selected-label {
-    margin-top: 25px;
-    color: #555;
-    font-size: 18px;
-    font-weight: 500;
+  margin-top: 25px;
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .selected-name {
-    margin-top: 8px;
-    font-size: 42px;
-    font-weight: 700;
+  margin-top: 8px;
+  font-size: 42px;
+  font-weight: 700;
 }
 
 .hex-code {
-    margin-top: 10px;
-    font-size: 20px;
-    color: #666;
-    font-weight: 600;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #666;
+  font-weight: 600;
+}
+
+.hex-input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.hex-input-container input {
+  width: 260px;
+  padding: 14px 18px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.hex-input-container input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.35);
+}
+
+.apply-btn {
+  background: #5381e4;
+  color: white;
+  cursor: pointer;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.apply-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  transform: translateY(-2px);
+}
+.hex-title {
+  margin: 8px;
+  margin-right: 0px;
+  color: #696969;
+  font-size: 1rem;
+}
+.error {
+  margin-top: 10px;
+  color: #dc2626;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 footer {
   margin-top: 40px;
-  color: #555;
+  color: #5a2121;
 }
